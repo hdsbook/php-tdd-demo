@@ -7,10 +7,7 @@ use App\DesignPatterns\Strategy\TransportByTrain;
 use App\DesignPatterns\Strategy\Traveler;
 use PHPUnit\Framework\TestCase;
 
-/**
- * @covers Traveler
- */
-class travelerTest extends TestCase
+class TravelerTest extends TestCase
 {
     /**
      * @var Traveler $busTraveler
