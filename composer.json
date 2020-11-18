@@ -1,4 +1,6 @@
 {
+    "name": "hdsbook/php-tdd-demo",
+    "description": "php tdd demo",
     "require-dev": {
         "phpunit/phpunit": "^9.4"
     },
