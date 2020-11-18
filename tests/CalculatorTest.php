@@ -8,7 +8,6 @@ use PHPUnit\Framework\TestCase;
 /**
  * CalculatorTest
  * @group Calculator
- * @covers Calculator
  */
 class CalculatorTest extends TestCase
 {
