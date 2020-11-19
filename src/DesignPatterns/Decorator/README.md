@@ -7,4 +7,16 @@
 > ConcreteComponent 讓 Decorator 物件為自己增加功能。
 
 
+## Component
+
+- `StudentInterface`: interface
+- `Student`: concrete component, implements `StudentInterface`
+
+## Decorator 繼承關係
+
+- `StuDecorator`: abstract, implements `StudentInterface`
+  - `HardWorking`: concrete decorator, extends `StuDecorator`
+  - `Lazy`: concrete decorator, extends `StuDecorator`
+
+
 [更多…](https://www.notion.so/17-Decorator-7e382966369e4d4088433122ae51570f)
