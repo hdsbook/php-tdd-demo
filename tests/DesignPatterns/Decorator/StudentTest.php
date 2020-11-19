@@ -32,14 +32,25 @@ class StudentTest extends TestCase
         $goodStu = new HardWorking(new Student('靜香'));
         $goodStu->study();
         $studyHistory = $goodStu->getStudyHistory();
-        $this->assertSame(['讀書', '預習'], $studyHistory);
+        $this->assertSame(['複習', '讀書', '預習'], $studyHistory);
     }
 
-    public function testLazyHardStudy()
+    public function testCombineStudy()
     {
-        $studentA = new Lazy(new HardWorking(new Student('先苦後甘同學')));
-        $studentA->study();
-        $studyHistory = $studentA->getStudyHistory();
-        $this->assertSame(['玩遊戲', '讀書', '預習', '讀到睡著'], $studyHistory);
+        $stuA = new Lazy(new HardWorking(new Student('先甘後苦同學')));
+        $stuA->study();
+        $studyHistory = $stuA->getStudyHistory();
+        $this->assertSame(
+            ['玩遊戲', '複習', '讀書', '預習', '讀到睡著'],
+            $studyHistory
+        );
+
+        $stuB = new HardWorking(new Lazy(new Student('夢中預習同學')));
+        $stuB->study();
+        $studyHistory = $stuB->getStudyHistory();
+        $this->assertSame(
+            ['複習', '玩遊戲', '讀書', '讀到睡著', '預習'],
+            $studyHistory
+        );
     }
 }

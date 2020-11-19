@@ -19,11 +19,17 @@ class HardWorking extends StuDecorator
 
     public function study()
     {
+        $this->review();
         $this->stu->study();
         $this->preview();
     }
 
     // decorate functions ----------------
+
+    private function review()
+    {
+        $this->pushHistory('複習');
+    }
 
     private function preview()
     {
