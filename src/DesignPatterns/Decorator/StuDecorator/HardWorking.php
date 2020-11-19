@@ -3,13 +3,14 @@
 namespace Src\DesignPatterns\Decorator\StuDecorator;
 
 use Src\DesignPatterns\Decorator\StudentInterface;
+use Src\DesignPatterns\Decorator\StuDecorator\StuDecorator;
 
 /**
  * class HardWorking
  *
- * @property Src\DesignPatterns\Decorator\Student $stu
+ * @property StudentInterface $stu
  */
-class HardWorking implements StudentInterface
+class HardWorking extends StuDecorator
 {
     public function __construct(StudentInterface $stu)
     {
@@ -20,16 +21,6 @@ class HardWorking implements StudentInterface
     {
         $this->stu->study();
         $this->preview();
-    }
-
-    public function pushHistory($history)
-    {
-        $this->stu->pushHistory($history);
-    }
-
-    public function getStudyHistory()
-    {
-        return $this->stu->getStudyHistory();
     }
 
     // decorate functions ----------------

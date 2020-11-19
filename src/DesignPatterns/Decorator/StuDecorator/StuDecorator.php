@@ -3,14 +3,13 @@
 namespace Src\DesignPatterns\Decorator\StuDecorator;
 
 use Src\DesignPatterns\Decorator\StudentInterface;
-use Src\DesignPatterns\Decorator\StuDecorator\StuDecorator;
 
 /**
- * class Lazy
+ * class StuDecorator
  *
  * @property StudentInterface $stu
  */
-class Lazy extends StuDecorator
+abstract class StuDecorator implements StudentInterface
 {
     public function __construct(StudentInterface $stu)
     {
@@ -19,20 +18,16 @@ class Lazy extends StuDecorator
 
     public function study()
     {
-        $this->play();
         $this->stu->study();
-        $this->fellAsleep();
     }
 
-    // decorate functions ----------------
-
-    private function play()
+    public function pushHistory($history)
     {
-        $this->pushHistory('玩遊戲');
+        $this->stu->pushHistory($history);
     }
 
-    private function fellAsleep()
+    public function getStudyHistory()
     {
-        $this->pushHistory('讀到睡著');
+        return $this->stu->getStudyHistory();
     }
 }
