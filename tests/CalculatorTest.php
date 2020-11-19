@@ -2,7 +2,7 @@
 
 namespace Tests;
 
-use App\Calculator;
+use Src\Calculator;
 use PHPUnit\Framework\TestCase;
 
 /**

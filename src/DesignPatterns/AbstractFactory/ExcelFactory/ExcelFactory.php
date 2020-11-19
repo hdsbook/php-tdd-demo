@@ -1,6 +1,6 @@
 <?php
 
-namespace App\DesignPatterns\AbstractFactory\ExcelFactory;
+namespace Src\DesignPatterns\AbstractFactory\ExcelFactory;
 
 /**
  * 試算表工廠 (抽象工廠)

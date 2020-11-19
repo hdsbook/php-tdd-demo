@@ -1,6 +1,6 @@
 <?php
 
-namespace App\DesignPatterns\Adapter\Shape3d;
+namespace Src\DesignPatterns\Adapter\Shape3d;
 
 class Ball3d implements Shape3dInterface
 {

@@ -2,9 +2,9 @@
 
 namespace Tests\DesignPatterns\Strategy;
 
-use App\DesignPatterns\Strategy\TransportByBus;
-use App\DesignPatterns\Strategy\TransportByTrain;
-use App\DesignPatterns\Strategy\Traveler;
+use Src\DesignPatterns\Strategy\TransportByBus;
+use Src\DesignPatterns\Strategy\TransportByTrain;
+use Src\DesignPatterns\Strategy\Traveler;
 use PHPUnit\Framework\TestCase;
 
 class TravelerTest extends TestCase

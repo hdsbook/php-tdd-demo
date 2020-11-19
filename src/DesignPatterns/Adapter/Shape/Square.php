@@ -1,6 +1,6 @@
 <?php
 
-namespace App\DesignPatterns\Adapter\Shape;
+namespace Src\DesignPatterns\Adapter\Shape;
 
 class Square implements ShapeInterface
 {

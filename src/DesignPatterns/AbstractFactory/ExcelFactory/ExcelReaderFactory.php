@@ -1,9 +1,9 @@
 <?php
 
-namespace App\DesignPatterns\AbstractFactory\ExcelFactory;
+namespace Src\DesignPatterns\AbstractFactory\ExcelFactory;
 
-use App\DesignPatterns\AbstractFactory\Excel2007\Excel2007Reader;
-use App\DesignPatterns\AbstractFactory\Excel5\Excel5Reader;
+use Src\DesignPatterns\AbstractFactory\Excel2007\Excel2007Reader;
+use Src\DesignPatterns\AbstractFactory\Excel5\Excel5Reader;
 
 /**
  * 試算表取讀器工廠 (實體工廠)

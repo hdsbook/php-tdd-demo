@@ -1,6 +1,6 @@
 <?php
 
-namespace App\DesignPatterns\Strategy;
+namespace Src\DesignPatterns\Strategy;
 
 class TransportByBus implements TransportStrategyInterface
 {

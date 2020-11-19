@@ -1,6 +1,6 @@
 <?php
 
-namespace App\DesignPatterns\AbstractFactory\Excel5;
+namespace Src\DesignPatterns\AbstractFactory\Excel5;
 
 /**
  * 1993 試算表 writer

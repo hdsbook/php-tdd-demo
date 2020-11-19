@@ -1,6 +1,6 @@
 <?php
 
-namespace App\DesignPatterns\AbstractFactory\Excel2007;
+namespace Src\DesignPatterns\AbstractFactory\Excel2007;
 
 /**
  * 2007 版試算表 writer

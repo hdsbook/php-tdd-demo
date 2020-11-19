@@ -2,9 +2,9 @@
 
 namespace Tests\DesignPatterns\Adapter;
 
-use App\DesignPatterns\Adapter\Shape\Ball;
-use App\DesignPatterns\Adapter\Shape\Circle;
-use App\DesignPatterns\Adapter\Shape\Square;
+use Src\DesignPatterns\Adapter\Shape\Ball;
+use Src\DesignPatterns\Adapter\Shape\Circle;
+use Src\DesignPatterns\Adapter\Shape\Square;
 use PHPUnit\Framework\TestCase;
 
 /**
