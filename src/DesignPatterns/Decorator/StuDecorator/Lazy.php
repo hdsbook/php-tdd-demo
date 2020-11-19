@@ -21,18 +21,27 @@ class Lazy implements StudentInterface
         $this->play();
         $this->stu->study();
         $this->fellAsleep();
-        return $this->stu->studyHistory;
+    }
+
+    public function pushHistory($history)
+    {
+        $this->stu->pushHistory($history);
+    }
+
+    public function getStudyHistory()
+    {
+        return $this->stu->getStudyHistory();
     }
 
     // decorate functions ----------------
 
     private function play()
     {
-        $this->stu->studyHistory[] = '玩遊戲';
+        $this->pushHistory('玩遊戲');
     }
 
     private function fellAsleep()
     {
-        $this->stu->studyHistory[] = '讀到睡著';
+        $this->pushHistory('讀到睡著');
     }
 }

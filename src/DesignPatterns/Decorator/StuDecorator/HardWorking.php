@@ -20,13 +20,22 @@ class HardWorking implements StudentInterface
     {
         $this->stu->study();
         $this->preview();
-        return $this->stu->studyHistory;
+    }
+
+    public function pushHistory($history)
+    {
+        $this->stu->pushHistory($history);
+    }
+
+    public function getStudyHistory()
+    {
+        return $this->stu->getStudyHistory();
     }
 
     // decorate functions ----------------
 
     private function preview()
     {
-        $this->stu->studyHistory[] = '預習';
+        $this->pushHistory('預習');
     }
 }

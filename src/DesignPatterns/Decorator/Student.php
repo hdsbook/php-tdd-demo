@@ -10,11 +10,21 @@ class Student implements StudentInterface
     public function __construct($name)
     {
         $this->name = $name;
+        $this->studyHistory = [];
     }
 
     public function study()
     {
-        $this->studyHistory[] = '讀書';
+        $this->pushHistory('讀書');
+    }
+
+    public function pushHistory($history)
+    {
+        $this->studyHistory[] = $history;
+    }
+
+    public function getStudyHistory()
+    {
         return $this->studyHistory;
     }
 }
