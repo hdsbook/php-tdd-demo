@@ -4,8 +4,8 @@ namespace Src\DesignPatterns\Decorator;
 
 class Student implements StudentInterface
 {
-    public $name;
-    public $studyHistory;
+    private $name;
+    private $studyHistory;
 
     public function __construct($name)
     {
