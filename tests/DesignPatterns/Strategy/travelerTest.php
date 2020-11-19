@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Tests\DesignPatterns\Strategy;
+namespace Tests\DesignPatterns\Strategy;
 
 use App\DesignPatterns\Strategy\TransportByBus;
 use App\DesignPatterns\Strategy\TransportByTrain;

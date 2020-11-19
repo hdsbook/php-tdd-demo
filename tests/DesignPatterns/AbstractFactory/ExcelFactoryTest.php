@@ -1,5 +1,7 @@
 <?php
 
+namespace Tests\DesignPatterns\AbstractFactory;
+
 use App\DesignPatterns\AbstractFactory\ExcelFactory\ExcelReaderFactory;
 use App\DesignPatterns\AbstractFactory\ExcelFactory\ExcelWriterFactory;
 use PHPUnit\Framework\TestCase;

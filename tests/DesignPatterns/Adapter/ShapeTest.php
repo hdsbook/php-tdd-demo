@@ -1,5 +1,7 @@
 <?php
 
+namespace Tests\DesignPatterns\Adapter;
+
 use App\DesignPatterns\Adapter\Shape\Ball;
 use App\DesignPatterns\Adapter\Shape\Circle;
 use App\DesignPatterns\Adapter\Shape\Square;
