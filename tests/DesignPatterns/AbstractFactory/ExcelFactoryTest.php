@@ -8,12 +8,9 @@ use PHPUnit\Framework\TestCase;
 
 /**
  * ExcelFactoryTest
- * @group ExcelFactory
- * @covers ExcelFactory
  */
 class ExcelFactoryTest extends TestCase
 {
-    /** @covers ExcelReaderFactory */
     public function testReaderFactory()
     {
         $excelFactory = new ExcelReaderFactory();
@@ -27,7 +24,6 @@ class ExcelFactoryTest extends TestCase
         $this->assertEquals('正在讀取 新版檔案.xlsx …', $actual);
     }
 
-    /** @covers ExcelWriterFactory */
     public function testWriterFactory()
     {
         $excelFactory = new ExcelWriterFactory();
