@@ -14,7 +14,7 @@
   - [Singleton](/src/DesignPatterns/Singleton)
   - [Strategy](/src/DesignPatterns/Strategy)
   - [TemplateMethod](/src/DesignPatterns/TemplateMethod)
-- [Calculator](/src/CalculatorTest.php)
+- [Calculator](/src/Calculator.php)
 
 ## tests/：
 
