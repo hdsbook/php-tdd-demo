@@ -5,7 +5,7 @@ namespace Src\DesignPatterns\Facade;
 use Src\DesignPatterns\Facade\SystemApis\Api1;
 use Src\DesignPatterns\Facade\SystemApis\Api2;
 
-class Facade
+class FacadeA
 {
     public function doSomeThing()
     {
