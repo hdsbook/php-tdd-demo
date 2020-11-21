@@ -36,8 +36,9 @@
 
 ## 運行
 
-composer install
-
-composer dump-autoload
-
-phpunit tests/
+1. 必需先裝好 php, composer
+2. 執行：`composer install`
+3. 執行：`composer dump-autoload`
+4. 執行下列任一指令查看測試結果：
+  - `php vendor/bin/phpunit tests/ --color`
+  - `php vendor/bin/phpunit tests/ --testdox --color`
