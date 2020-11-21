@@ -40,7 +40,7 @@
 2. 執行：`composer install`
 3. 執行：`composer dump-autoload`
 4. 執行下列任一指令查看測試結果：
-  - `php vendor/bin/phpunit tests/ --color`
-  - `php vendor/bin/phpunit tests/ --testdox --color`
+   - `php vendor/bin/phpunit tests/ --color`
+   - `php vendor/bin/phpunit tests/ --testdox --color`
 5. 執行以下指令並以瀏覽器開啟 report/index.html 可查看測試覆蓋率
-  - `php vendor/bin/phpunit tests/ --coverage-html report/`
+   - `php vendor/bin/phpunit tests/ --coverage-html report/`
