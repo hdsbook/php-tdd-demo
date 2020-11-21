@@ -10,25 +10,34 @@ use Src\DesignPatterns\Observer\ObserverTwo;
  */
 class ObserverTest extends TestCase
 {
-    public function testNotify()
+    public function testAttach()
     {
         $observable = new Observable();
         $observerOne = new ObserverOne();
         $observerTwo = new ObserverTwo();
 
-        // attach observerOne and observerTwo
         $this->expectOutputString(
             "get data one and do something...<br>" .
                 "get data two and do something else...<br>"
         );
+
         $observable->attach($observerOne);
         $observable->attach($observerTwo);
         $observable->notify();
+    }
 
-        // detach observerOne
+    public function testDetach()
+    {
+        $observable = new Observable();
+        $observerOne = new ObserverOne();
+        $observerTwo = new ObserverTwo();
+
         $this->expectOutputString(
             "get data two and do something else...<br>"
         );
+
+        $observable->attach($observerOne);
+        $observable->attach($observerTwo);
         $observable->detach($observerOne);
         $observable->notify();
     }
