@@ -34,3 +34,5 @@ switch ($purpose) {
 主程式甚至不需要知道自己用的是什麼具體物件，只需要信任並知道如何使用來自抽象工廠生產出來的物件
 
 物件的實體化過程也交由衍生自抽象工廠的具體工廠 (ExcelReaderFactory、ExcelWriterFactory) 來負責
+
+[更多…](https://www.notion.so/11-Abstract-Factory-a8866fab16c043c7802b9952d5f44a94)
