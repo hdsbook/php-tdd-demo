@@ -7,7 +7,6 @@ use PHPUnit\Framework\TestCase;
 
 /**
  * CalculatorTest
- * @group Calculator
  */
 class CalculatorTest extends TestCase
 {

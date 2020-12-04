@@ -11,7 +11,6 @@ use Src\DesignPatterns\FactoryMethod\Shoes;
  */
 class ProductTest extends TestCase
 {
-    /** @test */
     public function testCreate()
     {
         $shoesFactory = new ShoesFactory();

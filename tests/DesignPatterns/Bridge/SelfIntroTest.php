@@ -8,23 +8,23 @@ use Src\DesignPatterns\Bridge\Implementation\DetailedSelfIntro;
 
 /**
  * SelfIntroTest
- * @group group
  */
 class SelfIntroTest extends TestCase
 {
-    /** @test */
     public function testSelfIntro()
     {
-
+        /** @given student and teacher */
         $student = new Student('子路', '舞劍');
         $teacher = new Teacher('孔子', '彈琴');
 
+        /** @when self introduce (brief/detail) */
         $teaIntroBrief = $teacher->selfIntro(new BriefSelfIntro());
         $teaIntroDetail = $teacher->selfIntro(new DetailedSelfIntro());
 
         $stuIntroBrief = $student->selfIntro(new BriefSelfIntro());
         $stuIntroDetail = $student->selfIntro(new DetailedSelfIntro());
 
+        /** @then assert introduce result */
         self::assertEquals(
             "大家好，我叫孔子！",
             $teaIntroBrief

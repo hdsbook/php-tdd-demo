@@ -9,11 +9,9 @@ use PHPUnit\Framework\TestCase;
 
 /**
  * ShapeTest
- * @group Shape
  */
 class ShapeTest extends TestCase
 {
-    /** @test */
     public function testShape()
     {
         $circle = new Circle();
